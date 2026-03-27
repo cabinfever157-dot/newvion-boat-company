@@ -1,0 +1,113 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "default_agent": "coder",
+    "instructions": [
+        "./rules.md"
+    ],
+    "mcp": {
+        "neon": {
+            "type": "local",
+            "command": [
+                "npx",
+                "-y",
+                "@modelcontextprotocol/server-postgres",
+                "${DATABASE_URL}"
+            ],
+            "environment": {
+                "DATABASE_URL": "${DATABASE_URL}"
+            }
+        },
+        "memory": {
+            "type": "local",
+            "command": [
+                "uvx",
+                "--from",
+                "mcp-memory-service",
+                "--with",
+                "onnxruntime",
+                "memory",
+                "server"
+            ],
+            "environment": {
+                "MCP_MEMORY_STORAGE_BACKEND": "sqlite_vec"
+            },
+            "timeout": 120000
+        },
+        "ralph_loop": {
+            "type": "local",
+            "command": [
+                "npx",
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ]
+        },
+        "web_search": {
+            "type": "local",
+            "command": [
+                "npx",
+                "-y",
+                "@modelcontextprotocol/server-brave-search"
+            ],
+            "environment": {
+                "BRAVE_API_KEY": "BSAAl0I1vLIoMsdweJ1ttVp85Stw4aR"
+            }
+        },
+        "stitch": {
+            "type": "local",
+            "command": [
+                "npx",
+                "-y",
+                "@_davideast/stitch-mcp@latest",
+                "proxy"
+            ]
+        },
+        "browser": {
+            "type": "local",
+            "command": [
+                "npx",
+                "-y",
+                "@playwright/mcp@latest"
+            ]
+        }
+    },
+    "provider": {
+        "ollama": {
+            "npm": "@ai-sdk/openai-compatible",
+            "name": "Ollama (Powerhouse)",
+            "options": {
+                "baseURL": "http://127.0.0.1:11434/v1"
+            },
+            "models": {
+                "swarm_lead": {
+                    "name": "kimi-k2.5:cloud"
+                },
+                "coder": {
+                    "name": "qwen3-coder:480b-cloud"
+                },
+                "vision": {
+                    "name": "qwen3-vl:235b-cloud"
+                },
+                "local": {
+                    "name": "qwen3-coder-next:latest"
+                },
+                "agent_team": {
+                    "name": "kimi-k2.5:cloud"
+                },
+                "builder": {
+                    "name": "qwen3-coder:480b-cloud"
+                }
+            }
+        },
+        "opencode": {
+            "name": "OpenCode Zen (Native)",
+            "models": {
+                "architect": {
+                    "name": "glm-5"
+                },
+                "fast": {
+                    "name": "minimax-m2.5"
+                }
+            }
+        }
+    }
+}

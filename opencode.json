@@ -1,0 +1,186 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "coder",
+  "instructions": [
+    "C:/Users/info/.gemini/GEMINI.md",
+    "./rules.md"
+  ],
+  "mcp": {
+    "neon": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "${DATABASE_URL}"
+      ],
+      "environment": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      }
+    },
+    "memory": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "--from",
+        "mcp-memory-service",
+        "--with",
+        "onnxruntime",
+        "memory",
+        "server"
+      ],
+      "environment": {
+        "MCP_MEMORY_STORAGE_BACKEND": "sqlite_vec",
+        "MCP_MEMORY_SQLITE_PATH": "C:\\Users\\info\\AppData\\Local\\mcp-memory\\sqlite_vec.db"
+      },
+      "timeout": 120000
+    },
+    "memory_project": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "--from",
+        "mcp-memory-service",
+        "--with",
+        "onnxruntime",
+        "memory",
+        "server"
+      ],
+      "environment": {
+        "MCP_MEMORY_STORAGE_BACKEND": "sqlite_vec",
+        "MCP_MEMORY_SQLITE_PATH": "C:/Projects/Newvion Boat Company/.opencode/memory_project.db",
+        "UV_PYTHON_PREFERENCE": "only-managed"
+      },
+      "timeout": 120000
+    },
+    "ralph_loop": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "web_search": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "environment": {
+        "BRAVE_API_KEY": "BSAAl0I1vLIoMsdweJ1ttVp85Stw4aR"
+      }
+    },
+    "stitch": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "stitch-mcp@latest"
+      ],
+      "environment": {
+        "STITCH_API_KEY": "AQ.Ab8RN6KsX83qmZlPMHgaMotcr3RSpve_RKVjuE-e9DgNupGY1A"
+      }
+    },
+    "magic_ui": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@magicuidesign/mcp"
+      ]
+    },
+    "browser": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@playwright/mcp@latest"
+      ]
+    },
+    "notebooklm": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "notebooklm-mcp"
+      ]
+    }
+  },
+  "provider": {
+    "gemini_3": {
+      "npm": "@ai-sdk/google",
+      "name": "Gemini 3 Previews",
+      "options": {
+        "apiKey": "AIzaSyCNoe1zS7sAaPfE8nDDoHxamKlKjzbzR4w"
+      },
+      "models": {
+        "gemini-3-flash-preview": {
+          "name": "Gemini 3 Flash Preview"
+        },
+        "gemini-3.1-pro-preview": {
+          "name": "Gemini 3.1 Pro Preview"
+        },
+        "gemini-2.5-pro": {
+          "name": "Gemini 2.5 Pro"
+        },
+        "gemini-3-pro-preview": {
+          "name": "Gemini 3 Pro Preview"
+        }
+      }
+    },
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (Powerhouse)",
+      "options": {
+        "baseURL": "http://127.0.0.1:11434/v1"
+      },
+      "models": {
+        "swarm_lead": {
+          "name": "kimi-k2.5:cloud"
+        },
+        "coder": {
+          "name": "devstral-2:123b-cloud"
+        },
+        "vision": {
+          "name": "qwen3-vl:235b-cloud"
+        },
+        "local": {
+          "name": "qwen3-coder-next:latest"
+        },
+        "agent_team": {
+          "name": "nemotron-3-super:cloud"
+        },
+        "builder": {
+          "name": "qwen3.5:122b-cloud"
+        },
+        "architect": {
+          "name": "deepseek-v3.2:cloud"
+        },
+        "fast": {
+          "name": "minimax-m2.7:cloud"
+        }
+      }
+    },
+    "openai": {
+      "npm": "@ai-sdk/openai",
+      "name": "OpenAI",
+      "options": {
+        "baseURL": "https://api.openai.com/v1",
+        "apiKey": "PLACEHOLDER_OPENAI_KEY"
+      },
+      "models": {
+        "gpt-5.4": {
+          "name": "GPT-5.4 (Latest)"
+        },
+        "gpt-5.4-pro": {
+          "name": "GPT-5.4 Pro"
+        },
+        "gpt-5.3-codex": {
+          "name": "GPT-5.3 Codex"
+        }
+      }
+    }
+  }
+}
