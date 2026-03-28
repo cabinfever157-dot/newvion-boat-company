@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Secret files - NEVER commit
+test_openai.js
+opencode.json
+*.env
+.env.*
+*.key
+*.pem
