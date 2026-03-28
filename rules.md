@@ -351,6 +351,8 @@ These are structural/architectural UX issues. ALWAYS flag them:
 ### A. Pre-Push Safeguard (Critical)
 - **Visual Audit Required**: NEVER execute a `git push` to Netlify/GitHub without first ensuring the site builds locally (`npm run build`) and passes a strict browser-based visual audit.
 - **Scaffold Detection**: If `layout.tsx` or `page.tsx` is accidentally overwritten by a Next.js generic scaffold (losing the "Editorial Coastal Luxury" styling), HALT and alert the user immediately. Do NOT push generic/broken UI.
+- **Secret Scan (MANDATORY)**: Before ANY `git push`, scan staged files and full history for API keys (`sk-proj`, `sk-live`, `ghp_`, `AKIA`). If found, scrub with `git-filter-repo` BEFORE pushing. See `.opencode/skills/pre-push-secret-scan/SKILL.md`.
+- **Banned Files**: `opencode.json`, `test_openai.js`, `*.env`, `*.key`, `*.pem` must NEVER be committed. They are blocked in `.gitignore`.
 
 ### B. Brand & Layout
 - **Logo Position**: Integrated into a frosted glass sticky Navbar.
