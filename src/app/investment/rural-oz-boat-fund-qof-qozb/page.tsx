@@ -76,7 +76,7 @@ export default function RuralOzBoatFund() {
             >
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 text-white">Strategic <span className="text-[#D4AF37] italic">Capital</span></h2>
               <p className="text-[#94A3B8] text-lg leading-relaxed mb-10">
-                The Rural OZ Boat Fund is a bespoke Qualified Opportunity Fund designed exclusively to invest in Qualified Opportunity Zone Businesses (QOZB) focused on waterfront development and maritime entrepreneurship. This fund unlocks highly sought-after tax-advantaged investment opportunities by deploying commercial-grade floating infrastructure into designated Opportunity Zones across the United States.
+                The Rural OZ Boat Fund is a bespoke Qualified Opportunity Fund designed exclusively to invest in Qualified Opportunity Zone Businesses (QOZB) focused on waterfront development and boat entrepreneurship. This fund unlocks highly sought-after tax-advantaged investment opportunities by deploying commercial-grade floating infrastructure into designated Opportunity Zones across the United States.
               </p>
               
               <div className="space-y-4">
@@ -104,7 +104,7 @@ export default function RuralOzBoatFund() {
               <div className="space-y-8 relative z-10">
                 <div className="border-b border-white/10 pb-6">
                   <h3 className="text-xl font-display text-white mb-4">Capital Efficiency</h3>
-                  <p className="text-[#94A3B8] text-sm leading-relaxed">By avoiding traditional coastal real estate acquisition costs, the fund deploys capital directly into revenue-generating maritime assets.</p>
+                  <p className="text-[#94A3B8] text-sm leading-relaxed">By avoiding traditional coastal real estate acquisition costs, the fund deploys capital directly into revenue-generating boat assets.</p>
                 </div>
                 <div className="border-b border-white/10 pb-6">
                   <h3 className="text-xl font-display text-white mb-4">Asset Mobility</h3>

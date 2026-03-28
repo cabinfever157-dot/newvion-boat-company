@@ -85,7 +85,7 @@ export default function MedicalProducts() {
                 Floating <br/><span className="text-gradient-gold italic">Healthcare</span>
               </h1>
               <p className="text-xl md:text-2xl text-[#C4C0B6] font-light leading-relaxed mb-12">
-                Turnkey maritime infrastructure designed to bring essential, world-class medical services directly to waterfront communities.
+                Turnkey boat infrastructure designed to bring essential, world-class medical services directly to waterfront communities.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6">

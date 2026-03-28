@@ -74,7 +74,7 @@ export default function Home() {
               transition={{ duration: 1, delay: 1 }}
               className="text-lg md:text-2xl font-light tracking-wide max-w-2xl mx-auto text-stone mb-12"
             >
-              Where uncompromising luxury meets unbounded maritime purpose.
+              Where uncompromising luxury meets unbounded purpose on the water.
             </motion.p>
             
             <motion.div
@@ -118,7 +118,7 @@ export default function Home() {
                 Redefining <br/><span className="text-gold italic">Waterfront</span> Real Estate
               </h2>
               <p className="text-stone text-lg leading-relaxed mb-8 max-w-xl">
-                Newvion Boat Company pioneers a revolutionary approach to modular maritime architecture. By deploying ultra-luxury, commercial-grade floating infrastructure, we unlock entirely new paradigms for healthcare, business, and residential life on the water.
+                Newvion Boat Company pioneers a revolutionary approach to modular boat architecture. By deploying ultra-luxury, commercial-grade floating infrastructure, we unlock entirely new paradigms for healthcare, business, and residential life on the water.
               </p>
               <Link href="/investment/rural-oz-boat-fund-qof-qozb" className="inline-flex items-center gap-2 text-gold font-medium uppercase tracking-widest text-sm hover:gap-4 transition-all border-b border-gold/30 pb-1 hover:border-gold">
                 Investment Opportunities <ArrowRight className="w-4 h-4" />

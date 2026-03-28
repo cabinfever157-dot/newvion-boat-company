@@ -35,7 +35,7 @@ export default function About() {
                 Where Innovation <br/><span className="text-gradient-gold italic">Meets the Water</span>
               </h1>
               <p className="text-xl md:text-2xl text-[#C4C0B6] font-light leading-relaxed mb-12">
-                We are a concept and brand development company pioneering the future of commercial maritime architecture.
+                We are a concept and brand development company pioneering the future of commercial boat architecture.
               </p>
             </motion.div>
           </div>

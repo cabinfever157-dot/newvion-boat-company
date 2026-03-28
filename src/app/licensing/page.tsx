@@ -76,7 +76,7 @@ export default function Licensing() {
             >
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 text-white">The <span className="text-[#D4AF37] italic">Advantage</span></h2>
               <p className="text-[#94A3B8] text-lg leading-relaxed mb-10">
-                Our Boat Licensing Program empowers entrepreneurs and investors to launch proven floating business concepts with minimal risk and maximum support. We remove the guesswork by packaging premium maritime design with high-yield business models.
+                Our Boat Licensing Program empowers entrepreneurs and investors to launch proven floating business concepts with minimal risk and maximum support. We remove the guesswork by packaging premium boat design with high-yield business models.
               </p>
               
               <div className="space-y-4">

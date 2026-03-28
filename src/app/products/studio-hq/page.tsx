@@ -17,7 +17,7 @@ export default function StudioProducts() {
     },
     {
       name: "Corporate Headquarters",
-      desc: "Executive suites and team workspaces. The ultimate flex space for maritime companies.",
+      desc: "Executive suites and team workspaces. The ultimate flex space for boat companies.",
       img: "/media/newvion_clean_5.png",
       gallery: [
         "/media/newvion_clean_1.png",

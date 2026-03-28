@@ -72,7 +72,7 @@ export default function BusinessProducts() {
     },
      {
        name: "Office Space",
-       desc: "Multi-story premium maritime co-working and private executive suites.",
+       desc: "Multi-story premium floating co-working and private executive suites.",
        img: "/media/Office-3-story.png",
        gallery: [],
      },
