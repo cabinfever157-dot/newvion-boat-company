@@ -342,19 +342,24 @@ These are structural/architectural UX issues. ALWAYS flag them:
 
 ---
 
-## 14. PROJECT-SPECIFIC VISUAL RULES — [TO BE DEFINED FOR THIS PROJECT]
+## 14. PROJECT-SPECIFIC VISUAL RULES
 
 > [!IMPORTANT]
 > This section is NOT synced from other projects. Before starting any UI build on this project,
 > define the brand rules below. See the brand rules below for an example of what to include.
 
-### A. Brand & Layout
-- **Logo Position**: *[Define for this project]*
-- **Logo Asset**: *[Define for this project — file path in `/images/`]*
-- **Layout Constraints**: *[Define parallax, spacing, imagery rules]*
+### A. Pre-Push Safeguard (Critical)
+- **Visual Audit Required**: NEVER execute a `git push` to Netlify/GitHub without first ensuring the site builds locally (`npm run build`) and passes a strict browser-based visual audit.
+- **Scaffold Detection**: If `layout.tsx` or `page.tsx` is accidentally overwritten by a Next.js generic scaffold (losing the "Editorial Coastal Luxury" styling), HALT and alert the user immediately. Do NOT push generic/broken UI.
 
-### B. Component Specifics
-- *[Define any project-specific component overrides or anti-clipping rules]*
+### B. Brand & Layout
+- **Logo Position**: Integrated into a frosted glass sticky Navbar.
+- **Logo Asset**: `public/media/newvion-logo.png`
+- **Layout Constraints**: "Editorial Coastal Luxury" aesthetic. Heavy use of whitespace, Navy/Gold/Ivory color palette, and Webflow-style interactive Bento Grids. 
+
+### C. Component Specifics
+- **Hero Video**: Uses a Vimeo iFrame fallback (`1177737915`) behind a grain and gradient overly. Must auto-play silently.
+- **Typography**: Playfair Display for headers, Inter for standard text.
 
 ---
 

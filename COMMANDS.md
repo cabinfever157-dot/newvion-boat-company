@@ -41,6 +41,7 @@
 | **Architect Planner** | "plan [Feature/Request]" or /plan [Feature/Request] | Breaks down a complex user request into a model-segmented action plan, assigning specific roles (`architect`, `builder`, `coder`) to each step with precise instructions. |
 | **Blast** | "blast new [Automation Name]" or /blast new [Automation Name] | A rigorous, 5-phase protocol for building deterministic, self-healing automation tools. |
 | **Site Planning Protocol** | "site new [Project Name] or /site design" or /site new [Project Name] or /site design | Comprehensive workflow for building premium websites using proven design principles and technical standards. |
+| **Stitch Mcp Setup** | "stitch mcp setup" or /stitch-mcp-setup | Local workspace skill. |
 
 ## 📐 Sovereignty Rules (Key Directives)
 
