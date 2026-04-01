@@ -114,10 +114,10 @@ export default function Home() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1 }}
             >
-              <span className="text-gold uppercase tracking-[0.3em] text-xs font-bold mb-4 block">The Rural Waterfront Reimagined</span>
               <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight mb-8">
                 The Wellness <br/><span className="text-gold italic">Marina</span>
               </h2>
+              <p className="text-gold uppercase tracking-[0.3em] text-xs font-bold mb-4 block">The Rural Waterfront Reimagined</p>
               <p className="text-stone text-lg leading-relaxed mb-8 max-w-xl">
                 Newvion Boat Company pioneers a revolutionary approach to modular boat architecture. By deploying ultra-luxury, commercial-grade floating infrastructure, we unlock entirely new paradigms for healthcare, business, and residential life on the water.
               </p>
