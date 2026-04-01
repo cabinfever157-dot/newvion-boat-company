@@ -114,6 +114,7 @@ export default function Home() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1 }}
             >
+              <span className="text-gold uppercase tracking-[0.3em] text-xs font-bold mb-4 block">The Wellness Marina</span>
               <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight mb-8">
                 The Rural <br/><span className="text-gold italic">Waterfront</span> Reimagined
               </h2>
