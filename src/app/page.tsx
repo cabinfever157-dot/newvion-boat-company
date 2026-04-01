@@ -151,7 +151,7 @@ export default function Home() {
                 <span className="text-gold uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Our Portfolio</span>
                 <h2 className="text-5xl md:text-7xl font-display font-bold">The Boats</h2>
               </div>
-              <p className="text-stone max-w-md text-lg">Engineered for absolute luxury. Designed for uncompromised utility.</p>
+              <p className="text-stone max-w-md text-lg">Designed to Create Community and Healthcare on the Water</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 auto-rows-[400px]">
