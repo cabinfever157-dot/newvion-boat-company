@@ -114,9 +114,9 @@ export default function Home() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1 }}
             >
-              <span className="text-gold uppercase tracking-[0.3em] text-xs font-bold mb-4 block">The Wellness Marina</span>
+              <span className="text-gold uppercase tracking-[0.3em] text-xs font-bold mb-4 block">The Rural Waterfront Reimagined</span>
               <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight mb-8">
-                The Rural <br/><span className="text-gold italic">Waterfront</span> Reimagined
+                The Wellness <br/><span className="text-gold italic">Marina</span>
               </h2>
               <p className="text-stone text-lg leading-relaxed mb-8 max-w-xl">
                 Newvion Boat Company pioneers a revolutionary approach to modular boat architecture. By deploying ultra-luxury, commercial-grade floating infrastructure, we unlock entirely new paradigms for healthcare, business, and residential life on the water.
@@ -133,7 +133,7 @@ export default function Home() {
               className="relative aspect-video rounded-2xl overflow-hidden group shadow-2xl shadow-gold/10 border border-white/10"
             >
               <iframe 
-                src="https://player.vimeo.com/video/1177737915?title=0&byline=0&portrait=0"
+                src="https://player.vimeo.com/video/1174564693?title=0&byline=0&portrait=0"
                 className="absolute inset-0 w-full h-full"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
