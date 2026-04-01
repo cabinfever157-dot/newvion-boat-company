@@ -74,7 +74,7 @@ export default function Home() {
               transition={{ duration: 1, delay: 1 }}
               className="text-lg md:text-2xl font-light tracking-wide max-w-2xl mx-auto text-stone mb-12"
             >
-              Where uncompromising luxury meets unbounded purpose on the water.
+              Designing Boats Connecting Rural Communities
             </motion.p>
             
             <motion.div
