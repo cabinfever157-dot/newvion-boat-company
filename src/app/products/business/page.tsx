@@ -212,40 +212,7 @@ export default function BusinessProducts() {
               transition={{ duration: 1 }}
               className="bg-[#020C1B] rounded-3xl p-10 md:p-14 border border-white/5 relative overflow-hidden"
             >
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37]/5 blur-[100px] rounded-full" />
-              <span className="text-[#D4AF37] uppercase tracking-[0.3em] text-xs font-bold mb-8 block">Proforma Data</span>
-              
-              <div className="space-y-8 relative z-10">
-                 <div className="border-b border-white/10 pb-6">
-                   <span className="text-[#94A3B8] text-sm uppercase tracking-wider block mb-2">Investment Range</span>
-                   <span className="text-3xl font-display text-white">$350,000 - $550,000</span>
-                 </div>
-                 <div className="border-b border-white/10 pb-6">
-                   <span className="text-[#94A3B8] text-sm uppercase tracking-wider block mb-2">Estimated Monthly Revenue</span>
-                   <span className="text-3xl font-display text-white">$6,000 - $18,000</span>
-                 </div>
-                 <div className="border-b border-white/10 pb-6">
-                   <span className="text-[#94A3B8] text-sm uppercase tracking-wider block mb-2">ROI Timeline</span>
-                   <span className="text-3xl font-display text-white">12 - 24 Months</span>
-                 </div>
-                 <div>
-                   <span className="text-[#94A3B8] text-sm uppercase tracking-wider block mb-2">License Fee</span>
-                   <span className="text-3xl font-display text-white">$20,000 - $25,000</span>
-                   <p className="text-xs text-[#94A3B8] mt-2 italic">Varies by concept. Includes complete operational and marketing package.</p>
-                 </div>
-                 <div className="border-b border-white/10 pb-6">
-                   <span className="text-[#94A3B8] text-sm uppercase tracking-wider block mb-2">Boat Lease</span>
-                   <span className="text-3xl font-display text-white">$60,000 - $90,000 annually</span>
-                 </div>
-                 <div className="border-b border-white/10 pb-6">
-                   <span className="text-[#94A3B8] text-sm uppercase tracking-wider block mb-2">License/Royalty</span>
-                   <span className="text-3xl font-display text-white">5% - 8% of gross revenue</span>
-                 </div>
-                 <div>
-                   <span className="text-[#94A3B8] text-sm uppercase tracking-wider block mb-2">Setup Fee</span>
-                   <span className="text-3xl font-display text-white">$10,000 - $25,000</span>
-                 </div>
-              </div>
+
             </motion.div>
           </div>
         </section>
@@ -271,11 +238,7 @@ export default function BusinessProducts() {
                      >
                        <h3 className="text-4xl font-display font-bold text-white mb-6">{model.name}</h3>
                        <p className="text-[#94A3B8] text-xl leading-relaxed mb-8">{model.desc}</p>
-                       {model.name === "Pilates & Wellness" && (
-                         <div className="mt-4 text-[#C4C0B6] mb-4">
-                           <p><strong>Pilates Proforma:</strong> $110,000 Startup Capital Required (Includes $20k Technogym Kinesis Wall, $18k for 4 Reformers, $20k Apartment Furnishings). Conservative Monthly Revenue: $14,800/month.</p>
-                         </div>
-                       )}
+
                         
                        {/* Optional Spec/Download Button per model */}
                        {model.name === "Art Studio" && (

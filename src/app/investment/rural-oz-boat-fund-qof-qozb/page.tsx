@@ -104,7 +104,7 @@ export default function RuralOzBoatFund() {
               <div className="space-y-8 relative z-10">
                 <div className="border-b border-white/10 pb-6">
                   <h3 className="text-xl font-display text-white mb-4">Capital Efficiency</h3>
-                  <p className="text-[#94A3B8] text-sm leading-relaxed">By avoiding traditional coastal real estate acquisition costs, the fund deploys capital directly into revenue-generating boat assets.</p>
+
                 </div>
                 <div className="border-b border-white/10 pb-6">
                   <h3 className="text-xl font-display text-white mb-4">Asset Mobility</h3>
