@@ -1,0 +1,136 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Newvion LogoBoat Company" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]:
+          - img "Newvion Logo"
+          - text: Boat Company
+      - generic [ref=e6]:
+        - link "About" [ref=e7] [cursor=pointer]:
+          - /url: /about
+          - text: About
+        - link "Boats" [ref=e8] [cursor=pointer]:
+          - /url: /products
+          - text: Boats
+        - link "Investment" [ref=e9] [cursor=pointer]:
+          - /url: /investment/rural-oz-boat-fund-qof-qozb
+          - text: Investment
+        - link "Licensing" [ref=e10] [cursor=pointer]:
+          - /url: /licensing
+          - text: Licensing
+        - link "Inquire" [ref=e11] [cursor=pointer]:
+          - /url: /contact
+      - button [ref=e12]:
+        - img [ref=e13]
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - iframe [ref=e17]:
+        
+      - generic [ref=e18]:
+        - heading "Creating the Vision" [level=1] [ref=e20]:
+          - text: Creating the
+          - text: Vision
+        - paragraph [ref=e21]: Where uncompromising luxury meets unbounded purpose on the water.
+        - generic [ref=e22]:
+          - link "View The Boats" [ref=e23] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e24]:
+              - text: View The Boats
+              - img [ref=e25]
+          - link "Our Story" [ref=e27] [cursor=pointer]:
+            - /url: /about
+            - img [ref=e29]
+            - text: Our Story
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - heading "Redefining Waterfront Real Estate" [level=2] [ref=e34]:
+          - text: Redefining
+          - text: Waterfront Real Estate
+        - paragraph [ref=e35]: Newvion Boat Company pioneers a revolutionary approach to modular boat architecture. By deploying ultra-luxury, commercial-grade floating infrastructure, we unlock entirely new paradigms for healthcare, business, and residential life on the water.
+        - link "Investment Opportunities" [ref=e36] [cursor=pointer]:
+          - /url: /investment/rural-oz-boat-fund-qof-qozb
+          - text: Investment Opportunities
+          - img [ref=e37]
+      - iframe [ref=e40]:
+        - generic [ref=f2e4]:
+          - generic:
+            - generic:
+              - img
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+            - generic:
+              - img
+              - generic: Playing in picture-in-picture
+          - generic:
+            - generic:
+              - button "Play" [ref=f2e12] [cursor=pointer]:
+                - img [ref=f2e13]
+                - generic:
+                  - generic: Play
+                  - img [ref=f2e16]
+              - generic [ref=f2e18]:
+                - generic [ref=f2e19]:
+                  - slider "Progress Bar" [ref=f2e20] [cursor=pointer]
+                  - generic:
+                    - generic:
+                      - generic: 00:00
+                  - generic [ref=f2e25]: 01:00
+                - generic [ref=f2e26]:
+                  - generic [ref=f2e27]:
+                    - button:
+                      - img
+                    - slider
+                  - button:
+                    - img
+                    - generic: CC/subtitles
+                  - button:
+                    - img
+                    - generic: Settings
+                  - button:
+                    - img
+                    - generic: Transcript
+                  - button:
+                    - img
+                    - generic: Picture-in-Picture
+                  - button:
+                    - img
+                    - generic: Fullscreen
+                  - button "Show controls" [ref=f2e28] [cursor=pointer]:
+                    - img [ref=f2e29]
+                    - generic:
+                      - generic: Show controls
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - text: Our Portfolio
+          - heading "The Boats" [level=2] [ref=e45]
+        - paragraph [ref=e46]: Engineered for absolute luxury. Designed for uncompromised utility.
+      - generic [ref=e47]:
+        - link "Medical Boats Medical Boats Bringing world-class healthcare to the water." [ref=e48] [cursor=pointer]:
+          - /url: /products/medical
+          - img "Medical Boats"
+          - generic [ref=e49]:
+            - heading "Medical Boats" [level=3] [ref=e50]
+            - paragraph [ref=e51]: Bringing world-class healthcare to the water.
+        - link "Business & Commerce Business & Commerce Premium floating storefronts and offices." [ref=e52] [cursor=pointer]:
+          - /url: /products/business
+          - img "Business & Commerce"
+          - generic [ref=e53]:
+            - heading "Business & Commerce" [level=3] [ref=e54]
+            - paragraph [ref=e55]: Premium floating storefronts and offices.
+        - link "Studio & HQ Studio & HQ Creative spaces for visionaries and creators." [ref=e56] [cursor=pointer]:
+          - /url: /products/studio-hq
+          - img "Studio & HQ"
+          - generic [ref=e57]:
+            - heading "Studio & HQ" [level=3] [ref=e58]
+            - paragraph [ref=e59]: Creative spaces for visionaries and creators.
+        - link "Hotel & Retreats Hotel & Retreats Luxury waterfront accommodations." [ref=e60] [cursor=pointer]:
+          - /url: /products/hotel
+          - img "Hotel & Retreats"
+          - generic [ref=e61]:
+            - heading "Hotel & Retreats" [level=3] [ref=e62]
+            - paragraph [ref=e63]: Luxury waterfront accommodations.

@@ -1,0 +1,12 @@
+[     324ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/:0
+[  111031ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://localhost:3000/media/newvion_clean_1.png:0
+[  111033ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://localhost:3000/media/Creator-studio.png:0
+[  111033ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://localhost:3000/media/Foxtail%20Upper%20Deck.png:0
+[  111033ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://localhost:3000/_next/static/css/app/layout.css?v=1775052924036:0
+[  111033ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://localhost:3000/media/pharmacy-lw.png:0
+[  111033ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://localhost:3000/media/logo.png:0
+[  113378ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/webpack.js?v=1775052924036:0
+[  113379ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/main-app.js?v=1775052924036:0
+[  113379ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/app-pages-internals.js:0
+[  113379ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/app/page.js:0
+[  115735ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/favicon.ico?603d046c9a6fdfbb:0

@@ -49,7 +49,7 @@ export default function Products() {
                 The <span className="text-gradient-gold italic pr-4">Boats</span>
               </h1>
               <p className="text-xl md:text-2xl text-[#C4C0B6] max-w-3xl mx-auto font-light">
-                Uncompromising luxury engineered for ultimate utility. Explore our specialized boats.
+                Designed to Create Community and Healthcare on the Water
               </p>
             </motion.div>
           </div>
