@@ -63,8 +63,8 @@ export default function Home() {
               transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
               <h1 className="text-6xl md:text-8xl lg:text-[10rem] font-bold font-display leading-[0.9] tracking-tight mb-8 drop-shadow-2xl">
-                Explore the <br />
-                <span className="text-gradient-gold italic pr-4">Horizon</span>
+                Creating the <br />
+                <span className="text-gradient-gold italic pr-4">Vision</span>
               </h1>
             </motion.div>
             
