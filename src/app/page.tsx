@@ -115,7 +115,7 @@ export default function Home() {
               transition={{ duration: 1 }}
             >
               <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight mb-8">
-                Redefining <br/><span className="text-gold italic">Waterfront</span> Real Estate
+                The Rural <br/><span className="text-gold italic">Waterfront</span> Reimagined
               </h2>
               <p className="text-stone text-lg leading-relaxed mb-8 max-w-xl">
                 Newvion Boat Company pioneers a revolutionary approach to modular boat architecture. By deploying ultra-luxury, commercial-grade floating infrastructure, we unlock entirely new paradigms for healthcare, business, and residential life on the water.
