@@ -28,7 +28,7 @@ export default function Home() {
     {
       title: "Hotel & Retreats",
       desc: "Luxury waterfront accommodations.",
-      img: "/media/newvion_clean_1.png",
+      img: "/media/boutique_hotel_final.png",
       href: "/products/hotel",
     },
   ];
@@ -103,45 +103,21 @@ export default function Home() {
               </Link>
             </motion.div>
           </div>
-        </section>
 
-        {/* MISSION SECTION */}
-        <section className="w-full py-32 px-6 lg:px-12 bg-background relative z-20">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div 
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 1 }}
-            >
-              <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight mb-8">
-                The Wellness <br/><span className="text-gold italic">Marina</span>
-              </h2>
-              <p className="text-gold uppercase tracking-[0.3em] text-xs font-bold mb-4 block">The Rural Waterfront Reimagined</p>
-              <p className="text-stone text-lg leading-relaxed mb-8 max-w-xl">
-                Newvion Boat Company pioneers a revolutionary approach to modular boat architecture. By deploying ultra-luxury, commercial-grade floating infrastructure, we unlock entirely new paradigms for healthcare, business, and residential life on the water.
-              </p>
-              <Link href="/investment/rural-oz-boat-fund-qof-qozb" className="inline-flex items-center gap-2 text-gold font-medium uppercase tracking-widest text-sm hover:gap-4 transition-all border-b border-gold/30 pb-1 hover:border-gold">
-                Investment Opportunities <ArrowRight className="w-4 h-4" />
-              </Link>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
-              className="relative aspect-video rounded-2xl overflow-hidden group shadow-2xl shadow-gold/10 border border-white/10"
-            >
-              <iframe 
-                src="https://player.vimeo.com/video/1174564693?title=0&byline=0&portrait=0"
-                className="absolute inset-0 w-full h-full"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5, delay: 2 }}
+            className="absolute bottom-10 right-10 z-20"
+          >
+            <a href="https://eastcoasthouseboats.com/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/media/ECHB.png"
+                alt="East Coast Houseboats"
+                className="h-24 opacity-50 hover:opacity-100 transition-opacity duration-500"
               />
-              {/* Optional overlay gradient to tie it into the dark theme, but let the user click controls */}
-              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background/80 via-transparent to-transparent pointer-events-none" />
-            </motion.div>
-          </div>
+            </a>
+          </motion.div>
         </section>
 
         {/* BENTO GRID: THE BOATS */}
@@ -180,6 +156,44 @@ export default function Home() {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* MISSION SECTION */}
+        <section className="w-full py-32 px-6 lg:px-12 bg-background relative z-20">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 1 }}
+            >
+              <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight mb-8">
+                The Wellness <br/><span className="text-gold italic">Marina</span>
+              </h2>
+              <p className="text-gold uppercase tracking-[0.3em] text-xs font-bold mb-4 block">The Rural Waterfront Reimagined</p>
+              <p className="text-stone text-lg leading-relaxed mb-8 max-w-xl">
+                A mixed-use wellness destination built entirely on the water. Health, hospitality, community, a place where people gather, heal, create and connect — designed for living well.
+              </p>
+              <Link href="/investment/rural-oz-boat-fund-qof-qozb" className="inline-flex items-center gap-2 text-gold font-medium uppercase tracking-widest text-sm hover:gap-4 transition-all border-b border-gold/30 pb-1 hover:border-gold">
+                Investment Opportunities <ArrowRight className="w-4 h-4" />
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="relative aspect-video rounded-2xl overflow-hidden group shadow-2xl shadow-gold/10 border border-white/10"
+            >
+              <iframe 
+                src="https://player.vimeo.com/video/1174564693?title=0&byline=0&portrait=0"
+                className="absolute inset-0 w-full h-full"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+              />
+              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background/80 via-transparent to-transparent pointer-events-none" />
+            </motion.div>
           </div>
         </section>
 

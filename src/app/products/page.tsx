@@ -29,7 +29,7 @@ export default function Products() {
       title: "Hotel & Retreats",
       desc: "Luxury floating accommodations and premium boutique hotel experiences.",
       href: "/products/hotel",
-      img: "/media/newvion_clean_3.png"
+      img: "/media/boutique_hotel_final.png"
     }
   ];
 

@@ -85,10 +85,7 @@ export default function About() {
         </section>
 
         {/* KEY PLATFORM FEATURES */}
-        <section className="w-full py-32 px-6 lg:px-12 relative overflow-hidden bg-[#020C1B]">
-          <div className="absolute right-0 top-0 w-1/2 h-full bg-[url('/media/Office-3-story.png')] bg-cover bg-center opacity-10 blur-sm" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#020C1B] via-[#020C1B]/90 to-transparent z-0" />
-          
+        <section className="w-full py-32 px-6 lg:px-12 bg-[#020C1B]">
           <div className="max-w-[1400px] mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             
             <motion.div 
@@ -97,8 +94,19 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <span className="text-[#D4AF37] uppercase tracking-[0.3em] text-xs font-bold mb-4 block">The Ecosystem</span>
-              <h2 className="text-5xl md:text-6xl font-display font-bold mb-8 text-white">A Complete <br/><span className="text-gradient-gold italic">Platform</span></h2>
+              <div className="flex items-center gap-4 mb-4">
+                <span className="text-[#D4AF37] uppercase tracking-[0.3em] text-xs font-bold">The Ecosystem</span>
+              </div>
+              <div className="flex items-center gap-4 mb-8">
+                <h2 className="text-5xl md:text-6xl font-display font-bold text-white">A Complete <br/><span className="text-gradient-gold italic">Platform</span></h2>
+                <a href="https://eastcoasthouseboats.com/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="/media/ECHB.png"
+                    alt="East Coast Houseboats"
+                    className="h-24 opacity-70 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </a>
+              </div>
               
               <div className="space-y-6 text-[#94A3B8] text-lg leading-relaxed">
                 <p>
@@ -134,6 +142,22 @@ export default function About() {
                 >
                   Explore Our Concepts <ArrowRight className="w-4 h-4" />
                 </Link>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+            >
+              <div className="relative aspect-video w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-gold/10">
+                <iframe
+                  src="https://player.vimeo.com/video/1177737915?title=0&byline=0&portrait=0&controls=1&loop=1"
+                  className="absolute inset-0 w-full h-full"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
             </motion.div>
 

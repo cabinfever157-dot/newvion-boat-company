@@ -6,24 +6,6 @@ import Navbar from "@/app/components/layout/navbar";
 import { ArrowRight, Check } from "lucide-react";
 
 export default function HotelProducts() {
-  const models = [
-    {
-      name: "The AB&B Boutique",
-      desc: "Turnkey luxury floating suites designed specifically for short-term premium rentals.",
-      img: "/media/newvion_clean_3.png",
-      gallery: [
-        "/media/newvion_clean_4.png",
-        "/media/newvion_clean_5.png",
-      ],
-    },
-    {
-      name: "The Floating Resort",
-      desc: "Multi-unit hospitality infrastructure capable of scaling into a complete waterfront resort.",
-      img: "/media/newvion_clean_1.png",
-      gallery: [],
-    },
-  ];
-
   const features = [
     "Five-star premium interior finishes and custom furnishings",
     "Smart-home automation (climate, lighting, entertainment)",
@@ -142,55 +124,76 @@ export default function HotelProducts() {
           </div>
         </section>
 
-        {/* THE BOATS GALLERY */}
+        {/* THE BOATS */}
         <section className="w-full py-32 px-6 lg:px-12">
           <div className="max-w-[1400px] mx-auto">
-            <div className="mb-20">
-              <span className="text-[#D4AF37] uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Available Concepts</span>
-              <h2 className="text-5xl md:text-7xl font-display font-bold">The Boats</h2>
+            <div className="mb-20 text-center">
+              <span className="text-[#D4AF37] uppercase tracking-[0.3em] text-xs font-bold mb-4 block">The Boats</span>
+              <h2 className="text-5xl md:text-7xl font-display font-bold">Hotel & Wellness Retreats</h2>
+              <p className="text-[#94A3B8] text-lg mt-4 max-w-2xl mx-auto">Luxury waterfront accommodations, spa treatments, and immersive wellness programming.</p>
             </div>
 
-            <div className="space-y-32">
-              {models.map((model, i) => (
-                <div key={i} className="flex flex-col gap-12">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <motion.div 
-                      initial={{ opacity: 0, x: i % 2 === 0 ? 30 : -30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.8 }}
-                      className={`order-2 ${i % 2 !== 0 ? 'lg:order-1' : 'lg:order-2'}`}
-                    >
-                      <h3 className="text-4xl font-display font-bold text-white mb-6">{model.name}</h3>
-                      <p className="text-[#94A3B8] text-xl leading-relaxed">{model.desc}</p>
-                    </motion.div>
-                    <motion.div 
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1 }}
-                      className={`order-1 ${i % 2 !== 0 ? 'lg:order-2' : 'lg:order-1'} aspect-[4/3] rounded-2xl overflow-hidden border border-white/5`}
-                    >
-                      <img src={model.img} alt={model.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
-                    </motion.div>
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  name: "Hotel Boat",
+                  desc: "Waterfront resort experience managed by Lum'ais. Spa, retreats, and corporate events.",
+                  img: "/media/boutique_hotel_final.png",
+                  tag: "Hospitality",
+                  href: "/products/hotel",
+                },
+                {
+                  name: "Spa Boat",
+                  desc: "Luxury spa treatments on the water — massage, hydrotherapy, steam rooms, and relaxation lounges with waterfront views.",
+                  img: "/media/spa_boat_interior.png",
+                  tag: "Wellness",
+                  href: "/products/hotel",
+                },
+                {
+                  name: "Wellness Retreat Boat",
+                  desc: "Immersive wellness programming — yoga, mindfulness, nutrition, and spa treatments on the water.",
+                  img: "/media/Wellness_Retreat_Boat.png",
+                  tag: "Wellness",
+                  href: "/products/hotel",
+                },
+              ].map((boat, i) => (
+                <motion.div
+                  key={boat.name}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                >
+                  <Link href={boat.href} className="group block h-full">
+                    <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black h-full transition-all duration-700 hover:border-[#D4AF37]/30 hover:shadow-2xl hover:shadow-[#D4AF37]/10">
+                      <div className="relative h-56 overflow-hidden">
+                        <img
+                          src={boat.img}
+                          alt={boat.name}
+                          className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 ease-out"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#020C1B]/80 via-transparent to-transparent" />
+                        <span className="absolute top-4 left-4 px-3 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase bg-[#D4AF37]/90 text-[#0F172A] backdrop-blur-sm">
+                          {boat.tag}
+                        </span>
+                      </div>
 
-                  {model.gallery.length > 0 && (
-                    <motion.div 
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.8 }}
-                      className="grid grid-cols-2 gap-4"
-                    >
-                      {model.gallery.map((img, j) => (
-                        <div key={j} className="aspect-[21/9] rounded-xl overflow-hidden border border-white/5">
-                          <img src={img} alt={`${model.name} Gallery ${j}`} className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                      <div className="p-8">
+                        <div className="flex items-start justify-between">
+                          <h3 className="text-2xl font-display font-bold text-white group-hover:text-[#D4AF37] transition-colors duration-300">
+                            {boat.name}
+                          </h3>
+                          <ArrowRight className="w-5 h-5 text-white/20 mt-1 transition-all duration-300 group-hover:text-[#D4AF37] group-hover:translate-x-1 group-hover:-translate-y-1" />
                         </div>
-                      ))}
-                    </motion.div>
-                  )}
-                </div>
+                        <p className="text-[#94A3B8] mt-3 text-sm leading-relaxed group-hover:text-[#C4C0B6] transition-colors">
+                          {boat.desc}
+                        </p>
+                      </div>
+
+                      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/0 to-transparent group-hover:via-[#D4AF37]/50 transition-all duration-700" />
+                    </div>
+                  </Link>
+                </motion.div>
               ))}
             </div>
           </div>

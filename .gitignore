@@ -40,10 +40,31 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Secret files - NEVER commit
+# Agent/Development
+.opencode/
+.playwright-mcp/
+ARCHON_*.md
+COMMANDS.md
+DESIGN.md
+SESSION_HANDOFF.md
+global_sync.js
+update_commands.js
 test_openai.js
 opencode.json
-*.env
-.env.*
-*.key
-*.pem
+opencode.json.backup
+rules.md
+dev.log
+
+# Uploads (user-generated content)
+Uploads/
+
+# Backup folders
+rhtp-temp/
+
+# Agent config (local only)
+AGENTS.md
+CLAUDE.md
+
+# Screenshots
+*.png
+*.webp
