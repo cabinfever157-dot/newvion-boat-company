@@ -29,13 +29,13 @@ When user requests UI/UX work, follow this workflow:
 ### Step 2: Generate Design System (REQUIRED)
 
 ```bash
-python3 skills/ui-ux-pro-max/scripts/search.py "<product_type> <industry> <keywords>" --design-system [-p "Project Name"]
+python3 skills/ui-ux-pro-max/scripts/search.py "[[product_type]] [[industry]] [[keywords]]" --design-system [-p "Project Name"]
 ```
 
 ### Step 2b: Persist Design System
 
 ```bash
-python3 skills/ui-ux-pro-max/scripts/search.py "<query>" --design-system --persist -p "Project Name"
+python3 skills/ui-ux-pro-max/scripts/search.py "[[query]]" --design-system --persist -p "Project Name"
 ```
 
 Creates:
@@ -45,7 +45,7 @@ Creates:
 ### Step 3: Supplement with Detailed Searches
 
 ```bash
-python3 skills/ui-ux-pro-max/scripts/search.py "<keyword>" --domain <domain> [-n <max_results>]
+python3 skills/ui-ux-pro-max/scripts/search.py "[[keyword]]" --domain [[domain]] [-n [[max_results]]]
 ```
 
 | Need | Domain |
@@ -59,7 +59,7 @@ python3 skills/ui-ux-pro-max/scripts/search.py "<keyword>" --domain <domain> [-n
 ### Step 4: Stack Guidelines
 
 ```bash
-python3 skills/ui-ux-pro-max/scripts/search.py "<keyword>" --stack html-tailwind
+python3 skills/ui-ux-pro-max/scripts/search.py "[[keyword]]" --stack html-tailwind
 ```
 
 Available: `html-tailwind`, `react`, `nextjs`, `vue`, `svelte`, `shadcn`

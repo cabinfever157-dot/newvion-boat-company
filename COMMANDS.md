@@ -30,6 +30,7 @@
 | **nextra4-docs-hub** | Natural Language Context |  |
 | **nlm-skill** | mentions of \"nlm\", \"notebooklm\", \"notebook lm\", \"podcast generation\", \"audio overview\", or any NotebookLM-related automation task. | "Expert guide for the NotebookLM CLI (`nlm`) and MCP server - interfaces for Google NotebookLM. Use this skill when users want to interact with NotebookLM programmatically, including: creating/managing notebooks, adding sources (URLs, YouTube, text, Google Drive), generating content (podcasts, reports, quizzes, flashcards, mind maps, slides, infographics, videos, data tables), conducting research, chatting with sources, or automating NotebookLM workflows. " |
 | **skill-777** | Natural Language Context | Mandatory GPT-5.4 architect consultation protocol for the OZ Explorer project. Use before every implementation, when encountering any error, and when planning any non-trivial change. Defines reasoning effort levels, pre-prompt structure, multi-turn dialogue rules, and post-implementation debrief requirements. |
+| **mempalace-protocol** | Any memory read/write operation. Auto-fires on session start. | Full MemPalace cognitive architecture for Archon: AAAK compression, Wing/Room taxonomy, Closet/Drawer split, Palace Wake-Up Ritual. Governs ALL memory operations globally. |
 | **vimeo-hero-panel** | phrases like "vimeo hero". | Embeds a 2-column Vimeo video panel exactly like the Oz2.org hero section, utilizing Framer Motion. |
 
 ## ⚡ Local Workspace Skills (Project-Specific)
