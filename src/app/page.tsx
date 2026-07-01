@@ -104,20 +104,6 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.5, delay: 2 }}
-            className="absolute bottom-10 right-10 z-20"
-          >
-            <a href="https://eastcoasthouseboats.com/" target="_blank" rel="noopener noreferrer">
-              <img
-                src="/media/ECHB.png"
-                alt="East Coast Houseboats"
-                className="h-24 opacity-50 hover:opacity-100 transition-opacity duration-500"
-              />
-            </a>
-          </motion.div>
         </section>
 
         {/* BENTO GRID: THE BOATS */}
