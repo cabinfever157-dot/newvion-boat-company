@@ -112,7 +112,7 @@ export default function Licensing() {
                 </div>
                 <div className="border-b border-white/10 pb-6">
                   <h3 className="text-xl font-display text-white mb-2">3. Manufacturing</h3>
-                  <p className="text-[#94A3B8] text-sm leading-relaxed">Your boat is built by our partners at East Coast Houseboats LLC to exact commercial specifications.</p>
+                  <p className="text-[#94A3B8] text-sm leading-relaxed">Your boat is built by our partners to exact commercial specifications.</p>
                 </div>
                 <div className="pb-6">
                   <h3 className="text-xl font-display text-white mb-2">4. Launch & Operations</h3>

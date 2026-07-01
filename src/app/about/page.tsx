@@ -99,13 +99,6 @@ export default function About() {
               </div>
               <div className="flex items-center gap-4 mb-8">
                 <h2 className="text-5xl md:text-6xl font-display font-bold text-white">A Complete <br/><span className="text-gradient-gold italic">Platform</span></h2>
-                <a href="https://eastcoasthouseboats.com/" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="/media/ECHB.png"
-                    alt="East Coast Houseboats"
-                    className="h-24 opacity-70 hover:opacity-100 transition-opacity duration-300"
-                  />
-                </a>
               </div>
               
               <div className="space-y-6 text-[#94A3B8] text-lg leading-relaxed">
