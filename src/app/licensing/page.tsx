@@ -7,7 +7,7 @@ import { ArrowRight, Check } from "lucide-react";
 
 export default function Licensing() {
   const includes = [
-    "The Branded Boat Infrastructure (Manufactured via East Coast Houseboats LLC)",
+    "The Branded Boat Infrastructure",
     "Exact Equipment and Outfitting Specifications",
     "Comprehensive Operational Playbook & Procedures",
     "Direct integration into the Newvion National Network",

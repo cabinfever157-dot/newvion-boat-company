@@ -131,7 +131,7 @@ export default function About() {
                   </li>
                 </ul>
                 <p className="pt-6">
-                  Supported by a strategic manufacturing partnership with East Coast Houseboats LLC and a highly targeted digital marketing platform, we provide a seamless, capital-efficient pathway to waterfront business ownership.
+                  Supported by strategic manufacturing partnerships and a highly targeted digital marketing platform, we provide a seamless, capital-efficient pathway to waterfront business ownership.
                 </p>
               </div>
 
